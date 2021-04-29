@@ -60,4 +60,10 @@ public class WaitJListTests implements TestsInit {
         jsearchTitle.is().size(greaterThan(7));
     }
 
+    @Test
+    public void atLeastTest() {
+        jsearchTitle.is().atLeast(10);
+        Assert.fail(".atLeast() not work");
+    }
+
 }
